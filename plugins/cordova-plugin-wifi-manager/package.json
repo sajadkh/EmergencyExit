@@ -1,0 +1,75 @@
+{
+  "_from": "cordova-plugin-wifi-manager",
+  "_id": "cordova-plugin-wifi-manager@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-rKXzN+2uJQfr3Rg/kh6SBdvqQ678yXEyQy4YalJHNdv+jcpRx3FV6k3bIX9AQltgWC3W+tRKihC4idYHe4AK5Q==",
+  "_location": "/cordova-plugin-wifi-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-wifi-manager",
+    "name": "cordova-plugin-wifi-manager",
+    "escapedName": "cordova-plugin-wifi-manager",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-wifi-manager/-/cordova-plugin-wifi-manager-0.2.0.tgz",
+  "_shasum": "df446bfd1ed20c5cc4cb53f395ea1a1b4f0e5e94",
+  "_spec": "cordova-plugin-wifi-manager",
+  "_where": "D:\\Projects\\Cordova\\EmergencyExit",
+  "author": {
+    "name": "Koichi Yokota"
+  },
+  "bugs": {
+    "url": "https://github.com/sushichop/cordova-plugin-wifi-manager/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-wifi-manager",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Wi-Fi Manager Plugin for Apache Cordova",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "homepage": "https://github.com/sushichop/cordova-plugin-wifi-manager#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "wifi"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-wifi-manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushichop/cordova-plugin-wifi-manager.git"
+  },
+  "scripts": {
+    "lint": "eslint 'www/**/*.js'",
+    "test": "npm run lint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "0.2.0"
+}
