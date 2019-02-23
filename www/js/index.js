@@ -17,6 +17,7 @@
  * under the License.
  */
 var sw = false;
+var config = "sajad";
 var app = {
     // Application Constructor
     initialize: function () {
@@ -43,7 +44,7 @@ var app = {
         timer.onTick = function(tick) {
             console.log("tick");
             $('.app').empty();
-            scan("sajad");
+            scan(config);
 
         };
         timer.onError = function(errorMessage) {
@@ -53,7 +54,7 @@ var app = {
             5000,
             5000,
             function() {
-                scan("sajad");
+                scan(config);
             },
             function(errorMessage) {
                 // invoked after unsuccessful start
@@ -87,7 +88,7 @@ function sendMyLocation(err, data, callback){
         console.log(err);
     else{
         var dataToSend = {
-            d: "sajad",
+            d: config,
             f: "ferdowsi_uni_eng",
             s: {
                 bluetooth:{},
@@ -150,7 +151,7 @@ function getPath(location) {
     }
 
     console.log(source+ " " + location);
-    cordova.plugin.http.sendRequest('http://192.168.1.34:8000/path?source=' + source, options, function(response) {
+    cordova.plugin.http.sendRequest('http://68.183.147.154:8000/path?source=' + source, options, function(response) {
         // prints 200
         var path = JSON.parse(response.data).path;
         var fire = JSON.parse(response.data).fire;
@@ -183,7 +184,7 @@ function getPath(location) {
                 "<img src=\"img/up.png\" style=\"width: 100px; height: 10%; position: fixed; top: 12%; left: 36%\">");
 
             if(path[0] == 3){
-                $(".app").append("<div style=\"background-color: green; min-width: 50px; height: 25%; position: fixed; top: 22%; border-radius: 5px; left: 43%\"></div>")
+                $(".app").append("<div style=\"background-color: green; min-width: 50px; height: 18%; position: fixed; top: 22%; border-radius: 5px; left: 43%\"></div>")
             }
             else if(path[0] == 4){
                 $(".app").append("<div style=\"background-color: green; min-width: 50px; height: 45%; position: fixed; top: 22%; border-radius: 5px; left: 43%\"></div>")
@@ -199,7 +200,7 @@ function getPath(location) {
         console.log(response.error);
         navigator.notification.alert(JSON.parse(response.error).message, function () {}, "You will die very soon!");
         $('.app').html("<img src=\"img/ezraeel.jpg\" style='height: 100%; width: 100%; z-index: 100'>")
-        var my_media = new Media('http://192.168.1.34/Ablis.mp3',
+        var my_media = new Media('http://192.168.43.89/Ablis.mp3',
             // success callback
             function () {
                 console.log("playAudio():Audio Success");
